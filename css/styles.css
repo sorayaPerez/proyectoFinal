@@ -19,10 +19,10 @@ header nav div i{
     padding: 5px;
 }
 
-/* header nav div img{
-    height: 30px;
-    width: 30px;
-} */
+header nav div img{
+    height: 35px;
+    width: 35px;
+}
 
 header nav div a{
     text-decoration: none;
