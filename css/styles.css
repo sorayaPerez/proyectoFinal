@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Inicio Header */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    margin: 10px 20px 0px 20px;
+}
+
+header nav div i{
+    font-size: 23px;
+    padding: 5px;
+}
+
+/* header nav div img{
+    height: 30px;
+    width: 30px;
+} */
+
+header nav div a{
+    text-decoration: none;
+}
+
+.headerContainerLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.headerFontAwesome{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    
