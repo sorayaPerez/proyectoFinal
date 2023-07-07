@@ -47,12 +47,26 @@ header nav div a{
 .headerBuscador{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 20px 0px 20px;
+    z-index: 999;
 }
 
 .headerBuscador input{
     width: 464px;
     height: 50px;
     border-radius: 15px;
+    padding: 15px;
+    flex-grow: 1; /* Para que ocupe el maximo del div (headerBuscador, tiene margenes!)*/
+    border: 1px solid blueviolet;
+}
+
+.headerBuscador button i fa-magnifying-glass{
+    background-color: blueviolet;
+    border: none;
+}
+
+.headerBuscador button {
+    position: absolute;
+    height: fit-content;
     padding: 15px;
 }
