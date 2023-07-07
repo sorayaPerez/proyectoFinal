@@ -8,10 +8,10 @@
 
 .container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     /* background-color: antiquewhite; */
-    margin: 8px 8px 0px 8px;
+    margin: 8px 18px 0px 18px;
     flex-wrap: wrap;
 }
 
@@ -40,7 +40,19 @@ header nav div a{
     font-size: 14px;
 }
 
+.fa-user{
+    padding-right: 5px;
+}
+
 .headerBuscador{
     display: flex;
-    
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.headerBuscador input{
+    width: 464px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px;
 }
