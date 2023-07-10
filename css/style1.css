@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #D3CCE3;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 20% 10% auto 30%;
+    column-gap: 10px;
+    row-gap: 15px;
+    padding: 10px;
+}
+header{
+    grid-column: 1/span 12;
+    background-color: beige;
+}
+.container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    margin: 8px 18px 0px 18px;
+    flex-wrap: wrap;
+}
+.fa-user{
+    padding-right: 5px;
+}
+
+.headerContainerBuscador{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:center;
+    margin: 10px 20px 0px 20px;
+    height: 50px;
+    position: relative;
+}
+
+.headerContainerBuscador input{
+    width: 464px;
+    height: 50px;
+    padding: 15px;
+    /* flex-grow: 1;  */
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    /* position: absolute; */
+    outline: none;
+}
+
+
+.headerContainerBuscador button {
+    position: absolute;
+    top: 0;
+    border: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 25px 25px 0;
+    padding: 14px;
+    margin: auto;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+header nav div i{
+    font-size: 20px;
+}
+
+header nav div img{
+    height: 30px;
+    width: 30px;
+}
+
+header nav div a{
+    text-decoration: none;
+}
+
+.headerContainerLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.headerFontAwesome{
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.fa-user{
+    padding-right: 5px;
+}
+
+.headerBuscador{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px 0px 20px;
+    z-index: 999;
+}
+
+.headerBuscador input{
+    width: 464px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    flex-grow: 1; /* Para que ocupe el maximo del div (headerBuscador, tiene margenes!)*/
+    border: 1px solid blueviolet;
+}
+
+.headerBuscador button i fa-magnifying-glass{
+    background-color: blueviolet;
+    border: none;
+}
+
+.headerBuscador button {
+    position: absolute;
+    height: fit-content;
+    padding: 15px;
+}
+
+
+
+
+main{
+    /* background-color: burlywood; */
+    grid-column: 1/ span 12;
+    grid-row: 4/11;
+}
+.headerBuscador{
+    grid-column: 1/12;
+    grid-row: 3/4;
+}
+footer{
+    background-color: grey;
+    grid-column: 1/ span 12;
+    grid-row:11/12 ;
+}
+.buscarProductos{
+    grid-column: 2/11;
+    grid-row: 3/4;
+}
+.containerCarrucel{
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.preguntasFrecuentes{
+    background-color: lightblue;
+}
+.card{
+    background-color:lightcyan;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #3130306e;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
