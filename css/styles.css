@@ -12,7 +12,7 @@
     justify-content: space-between;
     /* background-color: antiquewhite; */
     margin: 8px 18px 0px 18px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 header nav div i{
@@ -44,29 +44,43 @@ header nav div a{
     padding-right: 5px;
 }
 
-.headerBuscador{
+.headerContainerBuscador{
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content:center;
     margin: 10px 20px 0px 20px;
-    z-index: 999;
+    height: 50px;
+    position: relative;
 }
 
-.headerBuscador input{
+.headerContainerBuscador input{
     width: 464px;
     height: 50px;
-    border-radius: 15px;
     padding: 15px;
-    flex-grow: 1; /* Para que ocupe el maximo del div (headerBuscador, tiene margenes!)*/
+    /* flex-grow: 1;  */
     border: 1px solid blueviolet;
+    border-radius: 25px;
+    /* position: absolute; */
+    outline: none;
 }
 
-.headerBuscador button i fa-magnifying-glass{
-    background-color: blueviolet;
-    border: none;
-}
 
-.headerBuscador button {
+.headerContainerBuscador button {
     position: absolute;
-    height: fit-content;
-    padding: 15px;
+    top: 0;
+    border: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 25px 25px 0;
+    padding: 14px;
+    margin: auto;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: aliceblue;
 }
+
+/* button::hover{
+    background-color: (0 0 0 /.5);
+} */
