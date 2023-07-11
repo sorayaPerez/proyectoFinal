@@ -4,24 +4,49 @@
     box-sizing: border-box;
 }
 
-/* Inicio Header */
+/*font-family: 'Heebo', sans-serif;*/
+
+/************************************************ Inicio MAIN ****************************/
+
+main{
+    /* margin-right: 40px; */
+    border: 1px solid rgb(15, 219, 25);
+    margin: 50px 20px;
+}
+
+/************************************************ Inicio HEADER ****************************/
+
+/* Cambia la barra de desplzamiento (scrollbar) lateral */
+body::-webkit-scrollbar{width: 4px;}
+body::-webkit-scrollbar-track{background: #1e1e24;}
+body::-webkit-scrollbar-thumb{background: #9a0fb6;}
+
+
 
 .container{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     /* background-color: antiquewhite; */
-    margin: 8px 18px 0px 18px;
-    flex-wrap:wrap;
+    margin: 0px 18px 0px 18px;
+    flex-wrap:wrap; 
+    overflow: hidden;
 }
+
+/*body{
+    /* background: linear-gradient(to right, #dae2f8, #d6a4a4); */
+    /* background: linear-gradient(to right, #8ecfd8, #817ea5);  */
+    /* background: linear-gradient(to right, #3d7eaa, #ffe47a);  */
+    /* background: linear-gradient(to right, #757f9a, #d7dde8); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, #eceaf0, #ecead0); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ }*/
 
 header nav div i{
     font-size: 20px;
 }
 
 header nav div img{
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
 }
 
 header nav div a{
@@ -59,7 +84,7 @@ header nav div a{
     height: 50px;
     padding: 15px;
     /* flex-grow: 1;  */
-    border: 1px solid blueviolet;
+    border: 1px solid #9a0fb6;
     border-radius: 25px;
     /* position: absolute; */
     outline: none;
@@ -75,9 +100,9 @@ header nav div a{
     border-radius: 0 25px 25px 0;
     padding: 14px;
     margin: auto;
-    border: 1px solid blueviolet;
+    border: 1px solid #9a0fb6;
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: #9a0fb6;
     color: aliceblue;
 }
 
@@ -87,7 +112,93 @@ header nav div a{
 
 
 
-/* Inicio Hero */
+
+
+/*************************************************** Inicio Hero ************************************/
+
+/*Contiene el titulo, api cursos, el boton y foto grupo personas*/
+.heroContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.heroTitulo{
+    display: flex;
+}
+
+.heroTituloSomos{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.heroTituloTuportal{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Img Api cursos*/
+.heroContainer img{
+    height: auto;
+    width: 60%;
+}
+
+.herobutton{
+    margin-top: 20px
+}
+
+/* container foto grupo de personas*/
+.heroContainerfoto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+/*Grupo de personas*/
+.heroContainerfoto img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Estilo button "Potencia tu conocimiento"*/
+
+.heroButtonContainer{
+    display: flex;
+    margin-top: 80px;
+}
+
+.heroButton {
+	box-shadow:inset 0px 0px 0px -19px #e6c6d3;
+	background:linear-gradient(to bottom, #f2ace2 5%, #d22feb 100%);
+	background-color:#f2ace2;
+	border-radius:20px;
+	border:1px solid #ebd0f5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:18px;
+	font-weight:bold;
+	padding:6px 14px;
+	text-decoration:none;
+	text-shadow:-5px 1px 18px #e678e6;
+}
+.herobutton:hover {
+	background:linear-gradient(to bottom, #d22feb 5%, #f2ace2 100%);
+	background-color:#d22feb;
+}
+.herobutton:active {
+	position:relative;
+	top:1px;
+}
 
 
 /*Inicio Cards*/
