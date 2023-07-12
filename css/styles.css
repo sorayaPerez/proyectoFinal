@@ -4,13 +4,12 @@
     box-sizing: border-box;
 }
 
-/*font-family: 'Heebo', sans-serif;*/
 
 /************************************************ Inicio MAIN ****************************/
 
 main{
     /* margin-right: 40px; */
-    border: 1px solid rgb(15, 219, 25);
+    /* border: 1px solid rgb(15, 219, 25); */
     margin: 50px 20px;
 }
 
@@ -33,6 +32,10 @@ body::-webkit-scrollbar-thumb{background: #9a0fb6;}
     overflow: hidden;
 }
 
+
+body{
+    background: linear-gradient(to right, #eceaf0, #d0d3ec);
+}
 /*body{
     /* background: linear-gradient(to right, #dae2f8, #d6a4a4); */
     /* background: linear-gradient(to right, #8ecfd8, #817ea5);  */
@@ -84,10 +87,11 @@ header nav div a{
     height: 50px;
     padding: 15px;
     /* flex-grow: 1;  */
-    border: 1px solid #9a0fb6;
+    border: 1px solid #6c15bd;
     border-radius: 25px;
     /* position: absolute; */
     outline: none;
+    background-color: transparent;
 }
 
 
@@ -100,9 +104,9 @@ header nav div a{
     border-radius: 0 25px 25px 0;
     padding: 14px;
     margin: auto;
-    border: 1px solid #9a0fb6;
+    border: 1px solid #6c15bd;
     cursor: pointer;
-    background-color: #9a0fb6;
+    background-color: #6c15bd;
     color: aliceblue;
 }
 
@@ -123,11 +127,10 @@ header nav div a{
     justify-content: center;
     align-items: center;   
     flex-wrap: wrap;
-    /* width: 100vw;
-    height: 100vh; */
+
 }
 
-.heroTitulo{
+/* .heroTitulo{
     display: flex;
 }
 
@@ -135,18 +138,17 @@ header nav div a{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     font-weight: bold;
-}
-
+} */
+/* 
 .heroTituloTuportal{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     text-align: center;
-}
+} */
 
-/*Img Api cursos*/
+/*Img slogan*/
 .heroContainer img{
-    height: auto;
-    width: 60%;
+    width: 100%;
 }
 
 .herobutton{
@@ -172,15 +174,15 @@ header nav div a{
 
 .heroButtonContainer{
     display: flex;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .heroButton {
 	box-shadow:inset 0px 0px 0px -19px #e6c6d3;
-	background:linear-gradient(to bottom, #f2ace2 5%, #d22feb 100%);
+	background:linear-gradient(to bottom, #9a519c 5%, #872feb 100%);
 	background-color:#f2ace2;
 	border-radius:20px;
-	border:1px solid #ebd0f5;
+	border:1px solid #9721c2;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -189,11 +191,11 @@ header nav div a{
 	font-weight:bold;
 	padding:6px 14px;
 	text-decoration:none;
-	text-shadow:-5px 1px 18px #e678e6;
+	text-shadow:-5px 1px 18px #78e6dd;
 }
 .herobutton:hover {
-	background:linear-gradient(to bottom, #d22feb 5%, #f2ace2 100%);
-	background-color:#d22feb;
+	background:linear-gradient(to bottom, #8aeb2f 5%, #acd8f2 100%);
+	background-color:#5f5e4a;
 }
 .herobutton:active {
 	position:relative;
@@ -201,7 +203,64 @@ header nav div a{
 }
 
 
+/* Inicio Top 3 */
+
+.topContainerMasElegidos{
+    margin: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #9e18d3, #ffe47a);
+    width: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.topContainer{
+    display: flex;
+    margin: 60px;
+}
+
+.toptresContainerHijos{
+    display: flex;
+    margin: 10px;
+}
+
+
+
 /*Inicio Cards*/
+
+.cursoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.cursoContainer img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.cursoContainer:hover img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.comprarButton {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
 
 
 /* Inicio Contacto */
