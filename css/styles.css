@@ -35,6 +35,7 @@ body::-webkit-scrollbar-thumb{background: #9a0fb6;}
 
 body{
     background: linear-gradient(to right, #eceaf0, #d0d3ec);
+        font-family: Arial, sans-serif;
 }
 /*body{
     /* background: linear-gradient(to right, #dae2f8, #d6a4a4); */
@@ -338,7 +339,7 @@ header nav div a{
   }
   
   @media only screen and (max-width: 480px) {
-    .container {
+    .ContainerLogoForm {
       padding: 10px;
     }
   }
