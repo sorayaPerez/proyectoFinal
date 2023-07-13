@@ -120,7 +120,40 @@
 
     <!-- Inicio Sec. "Contacto" -->
     <section>
-        <h1>holis</h1>
+        <div class="containerform">
+            <form action="guardar_curso.php" method="POST">
+              <div class="form-group">
+                <label for="nombre">Nombre del Curso:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                  <option value="programacion">Programación</option>
+                  <option value="diseno">Diseño</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="fotografia">Fotografía</option>
+                  <option value="yoga">Yoga</option>
+                  <option value="cocina">Cocina</option>
+                  <option value="community-manager">Community Manager</option>
+                  <option value="otros">Otro</option> 
+                </select>
+              </div>
+              
+              <input type="submit" value="Guardar Curso" class="btn-submit">
+            </form>
+          </div>
     </section>
     <!-- Fin Sec. "Contacto" -->
 
