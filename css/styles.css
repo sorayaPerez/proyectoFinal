@@ -6,12 +6,11 @@
 
 
 /************************************************ Inicio MAIN ****************************/
-
+/* 
 main{
     /* margin-right: 40px; */
     /* border: 1px solid rgb(15, 219, 25); */
-    margin: 50px 20px;
-}
+    /* margin: 50px 20px; } */
 
 /************************************************ Inicio HEADER ****************************/
 
@@ -30,11 +29,12 @@ body::-webkit-scrollbar-thumb{background: #9a0fb6;}
     margin: 0px 18px 0px 18px;
     flex-wrap:wrap; 
     overflow: hidden;
+    padding: 10px 20px 0px 20px;
 }
 
 
 body{
-    background: linear-gradient(to right, #eceaf0, #d0d3ec);
+    background: linear-gradient(to right,  #ddbdec, #d5fad4);
 }
 /*body{
     /* background: linear-gradient(to right, #dae2f8, #d6a4a4); */
@@ -42,6 +42,11 @@ body{
     /* background: linear-gradient(to right, #3d7eaa, #ffe47a);  */
     /* background: linear-gradient(to right, #757f9a, #d7dde8); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background: linear-gradient(to right, #eceaf0, #ecead0); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ }*/
+
+/* nav{
+    position: fixed;
+    width: 100%;
+} */
 
 header nav div i{
     font-size: 20px;
@@ -127,24 +132,9 @@ header nav div a{
     justify-content: center;
     align-items: center;   
     flex-wrap: wrap;
-
+    margin: 50px 20px;
+    border: 1px solid transparent;
 }
-
-/* .heroTitulo{
-    display: flex;
-}
-
-.heroTituloSomos{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-} */
-/* 
-.heroTituloTuportal{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    text-align: center;
-} */
 
 /*Img slogan*/
 .heroContainer img{
@@ -175,6 +165,9 @@ header nav div a{
 .heroButtonContainer{
     display: flex;
     margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .heroButton {
@@ -210,7 +203,7 @@ header nav div a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to right, #9e18d3, #ffe47a);
+    background: linear-gradient(to right, #ddbdec, #cbf8cb);
     width: 100%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -229,17 +222,45 @@ header nav div a{
 
 /*Inicio Cards*/
 
+/*Tag Section: incluye titulos y cards*/
+.cardsSection{
+    background: linear-gradient(to right, #ddbdec, #a3f7a2);
+    border: 1px solid transparent;
+}
+
+/*Container Titulos h2 y h3*/
+.cursoContainerTitulos{
+    display: flex;
+    margin: 50px 10px 0px 10px;
+    align-items: center;
+    border: 1px solid transparent; 
+    flex-direction: column;
+}
+
+.cardsSection h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.cardsSection h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+
+
 .cursoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
 .cursoContainer img {
-    width: 200px;
-    height: 200px;
+    width: 75%;
+    /* height: 200px; */
     margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
@@ -267,3 +288,90 @@ header nav div a{
 
 
 /*Inicio Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************ MEDIA PARA TABLETS */
+/* ENTRE 601 Y 1200*/ 
+
+@media only screen and (min-width: 501px) {
+
+    .container{
+        
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    .headerContainerBuscador input{
+        flex-grow: 1; 
+    }
+
+
+
+
+    }
+
+
+/******************************************** MEDIA Q PARA COMPUS GRANDES */
+/* PASA LOS 1200*/
+@media only screen and (min-width: 1201px) {
+
+    .heroContainer{
+        flex-direction:row;
+        column-gap: 80px;
+    }
+
+    .cursoContainerTitulos{
+        margin: 50px 10px 50px 100px;
+        align-items: flex-start;
+    }
+
+    .cardsSection h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        color: #6c15bd;
+    }
+    
+    .cardsSection h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .cursoContainer {
+        flex-direction: column;
+        /* margin-right: 50px;
+        margin-left: 50px; */
+    }
+
+    .cursoContainer img {
+        width: 100%;
+    }
+
+    .cursosTodos{
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+
+
+    }
