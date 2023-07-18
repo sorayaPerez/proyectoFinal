@@ -286,22 +286,191 @@ header nav div a{
 
 /* Inicio Contacto */
 
+.containerform {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+form {
+    background-color: #FFFFFF;
+    border: 1px solid #DBD6E2;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DBD6E2;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DBD6E2;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #872feb;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #8d3ceb;
+}
+
+
 
 /*Inicio Footer*/
 
 
+footer{
+    background:#8c52ff;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.footer_inferior{
+    background-color: #6940bb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 30px;
+    border-top: 1px solid white;
+}
+p{
+    padding: 10px;
+}
+.footer_superior{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+
+}
+a{
+    width: 20px;
+    height: 20px;
+}
+
+.margen a img{
+    width: 20px;
+    height: 20px;
+}
+.margen{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    align-items:center ;
+    
+}
+.redes{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container_logo{
+    /* border: 1px solid black; */
+    height: 50px;
+    display: flex;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.menu_listas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.container_pol{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.politicas{
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.lista{
+    /* text-align: start; */
+    margin-bottom: 5px;
+    font-weight:bold;
+}
 
 
+/* MARCOS */
 
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 480px) {
+    .ContainerLogoForm {
+    padding: 10px;
+    }
+}
 
 
 
@@ -320,10 +489,124 @@ header nav div a{
     .headerContainerBuscador input{
         flex-grow: 1; 
     }
+    }
 
+    /************************************************************* Footer */
 
+    :root {
+        --background: #2C2C2C;
+        --linkedin: #0A66C2;
+        --youtube: #e52d27;
+        --twitter: #1D9BF0;
+    }
+    *{
+        transition: all 0.5s;
+    }
+    .footer_superior{
+        height: 200px;
+    }
+    .menu_footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+    }
+    .redes{
+        height: 50px;
+        width: 300px;
+    }
+    .margen{
+        width: 40px;
+        height: 40px;
+    }
+    .margen a{
+        height: 30px;
+        width: 30px;
+    }
+    .margen a img{
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    *{
+        font-size: 20px;
+    }
+    .politicas{
+        font-size: 20px;
+    }
+    .politicas:hover{
+        cursor: pointer;
+        font-weight:bolder ;
+        transition: all 0.5s;
+    }
+    .margen:hover{
+        border: 2px;
+        transition: all 0.3s;
+        transform: scale(1.25);
+    }
+    .img{
+        transition: all 0.3s;
+    }
+    .margen:hover:nth-child(1) {
+        background:  radial-gradient(
+            circle at 30% 107%, #fdf497 0%, 
+            #fdf497 5%, #fd5949 45%,
+            #d6249f 60%,#285AEB 90%
+        ); 
+        transition: all 0.3s;
+    }
+    .margen:hover:nth-child(2) {
+        background-color: var(--twitter);
+    }
+    
+    .margen:hover:nth-child(3) {
+        background-color: var(--youtube);
+    }
+    
+    .margen:hover:nth-child(4) {
+        background-color: var(--linkedin);
+    }
+    .container_pol{
+        margin-top: 15px;
+    }
+.menu_listas{
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+.lista{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu_listas .lista:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(105%);
+}
 
+    /************************************************ MEDIA PARA ...*/
 
+    @media(min-width:801px){
+
+        .menu_listas{
+            flex-direction: row;
+        }
+    
+        .lista{
+            display:flex;
+            margin-left:  10px;
+        }
     }
 
 
